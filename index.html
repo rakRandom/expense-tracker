@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Expense Tracker </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <h1>Expense Tracker</h1>
+            <div class="search-box">
+                <h2>Search: </h2>
+                <input id="input-search" type="search" placeholder="Search for an item">
+            </div>
+            <div class="box">
+                <input id="input-name" type="text" placeholder="Item Name">
+                <input id="input-price" type="text" placeholder="$0.00">
+                <button onclick="addItem()">Add to the list</button>
+                <span id="output-price">Total: $0.00</span>
+            </div>
+            <ul id="items-list">
+            </ul>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

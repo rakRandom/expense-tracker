@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+:root {
+    --dark:#232323;
+    --light:#FDFDFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    color: var(--light);
+    box-sizing: border-box;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+
+    padding: 10px;
+}
+
+.content {
+    width: fit-content;
+    max-width: 800px;
+    height: fit-content;
+
+    margin: 50px auto 0;
+    padding: 30px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+
+    background-color: var(--dark);
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    margin: 20px 0 30px;
+
+}
+
+.search-box h2 {
+    align-self: center;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--dark);
+    outline: none;
+}
+
+.box {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.box #input-name {
+    max-width: 150px;
+    max-height: 34px;
+    padding: 8px;
+    border-left: 1px solid var(--dark);
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    color: var(--dark);
+    outline: none;
+}
+
+.box #input-price {
+    max-width: 100px;
+    max-height: 34px;
+    padding: 8px;
+    border-left: 1px solid var(--dark);
+    font-size: 16px;
+    color: var(--dark);
+    outline: none;
+}
+
+.box button {
+    max-height: 34px;
+    margin-right: 25px;
+    padding: 8px;
+    border-left: 1px solid var(--dark);
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.box button:hover {
+    background: #DDD;
+}
+
+.box button:active {
+    background: #AAA;
+    color: var(--light);
+}
+
+.box span {
+    width: fit-content;
+    min-width: 85px;
+    align-self: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 25px;
+    user-select: none;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li span:hover {
+    background: var(--light);
+    color: var(--dark);
+}
